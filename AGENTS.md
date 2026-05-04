@@ -27,9 +27,19 @@ orchestrator (Level 0)
         └── knowledge-manager
 ```
 
-## Entry Point
+## Entry Point (CRITICAL)
 
-Start with `orchestrator.md` for any task. The orchestrator handles discovery, planning, and delegation to tech-lead. Sub-agents should await delegation rather than act unprompted.
+**ALL user input goes to orchestrator FIRST. No other agent should respond directly to user.**
+
+When you receive a user request:
+1. YOU (orchestrator) handle it
+2. Delegate to tech-lead only
+3. Sub-agents (qa-lead, developer-lead, etc.) should NEVER be spawned directly by user input - only via tech-lead
+
+```
+USER → orchestrator → tech-lead → [other agents]
+     ↑ NEVER: user → qa-lead (WRONG)
+```
 
 ## Delegation Rules (CRITICAL)
 
