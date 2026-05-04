@@ -1,0 +1,7 @@
+sessions/
+prompts/
+bin/
+auth.json
+*.log
+*.jsonl
+.pi/

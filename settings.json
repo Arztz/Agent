@@ -1,0 +1,14 @@
+{
+  "lastChangelogVersion": "0.72.1",
+  "defaultProvider": "minimax",
+  "defaultModel": "MiniMax-M2.7",
+  "defaultThinkingLevel": "high",
+  "theme": "light",
+  "images": {
+    "blockImages": false
+  },
+  "packages": [
+    "npm:@tintinweb/pi-subagents",
+    "npm:@juicesharp/rpiv-todo"
+  ]
+}

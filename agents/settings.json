@@ -1,0 +1,97 @@
+{
+  "lastChangelogVersion": "0.70.5",
+  "defaultProvider": "minimax",
+  "defaultModel": "MiniMax-M2.7",
+  "defaultThinkingLevel": "high",
+  "subagent": {
+    "defaultMode": "chain",
+    "hierarchy": {
+      "orchestrator": [
+        "tech-lead",
+        "po",
+        "bu",
+        "infra-lead"
+      ],
+      "tech-lead": [
+        "backend-lead",
+        "frontend-lead",
+        "ux-ui-lead"
+      ],
+      "backend-lead": [
+        "backend-senior"
+      ],
+      "backend-senior": [
+        "backend-junior-a",
+        "backend-junior-b"
+      ],
+      "frontend-lead": [
+        "frontend-senior"
+      ],
+      "frontend-senior": [
+        "frontend-junior-a",
+        "frontend-junior-b"
+      ],
+      "ux-ui-lead": [
+        "ux-senior",
+        "ui-senior"
+      ],
+      "po": [
+        "ba-senior",
+        "qa-lead"
+      ],
+      "ba-senior": [
+        "ba-junior-a",
+        "ba-junior-b"
+      ],
+      "qa-lead": [
+        "qa-senior"
+      ],
+      "qa-senior": [
+        "qa-tester-a",
+        "qa-tester-b"
+      ],
+      "bu": [
+        "business-strategy",
+        "bi-lead",
+        "data-analysis-lead",
+        "knowledge-manager"
+      ],
+      "bi-lead": [
+        "bi-developer-senior"
+      ],
+      "data-analysis-lead": [
+        "data-analyst-senior"
+      ],
+      "knowledge-manager": [],
+      "infra-lead": [
+        "devops-lead",
+        "sre-lead",
+        "dba-lead",
+        "cloud-engineer-lead"
+      ],
+      "devops-lead": [
+        "devops-senior"
+      ],
+      "sre-lead": [
+        "sre-senior",
+        "app-support"
+      ],
+      "dba-lead": [
+        "dba-senior-a",
+        "dba-senior-b"
+      ],
+      "cloud-engineer-lead": [
+        "cloud-engineer-senior"
+      ]
+    }
+  },
+  "showHardwareCursor": true,
+  "terminal": {
+    "showTerminalProgress": true
+  },
+  "steeringMode": "all",
+  "followUpMode": "all",
+  "packages": [
+    "npm:@tintinweb/pi-subagents"
+  ]
+}
