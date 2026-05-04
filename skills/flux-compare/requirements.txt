@@ -1,0 +1,2 @@
+# flux-compare requirements
+pyyaml>=6.0
